@@ -8,7 +8,7 @@ import { P404Component } from "./views/error/404.component";
 import { P500Component } from "./views/error/500.component";
 import { LoginComponent } from "./views/login/login.component";
 import { RegisterComponent } from "./views/register/register.component";
-// import { UserTimelineComponent } from "./views/test/user-timeline.component";
+import { UserTimelineComponent } from "./views/test/user-timeline.component";
 import {AuthGuard} from './views/service/Auth/authGuard.service';
 import { UnauthGuard} from './views/service/unauthGaurd.service';
 export const routes: Routes = [
@@ -123,13 +123,13 @@ export const routes: Routes = [
       //       m => m.CustomModuleModule
       //     )
       // },
-      // {
-      //   path: "profile",
-      //   loadChildren: () =>
-      //   import("./views/user-profile/user-profile.module")
-      //   .then(m => m.ProfileModule)
-      //     // import("./views/user-profile/user-profile.module").then(m => m.ProfileModule)
-      // },
+      {
+        path: "profile",
+        loadChildren: () =>
+        import("./views/user-profile/user-profile.module")
+        .then(m => m.ProfileModule)
+          // import("./views/user-profile/user-profile.module").then(m => m.ProfileModule)
+      },
       // {
       //   path: "chats",
       //   loadChildren: () =>

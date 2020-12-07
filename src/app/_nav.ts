@@ -12,7 +12,7 @@ export const navItems: INavData[] = [
   },
   {
     name: "Personal Profile",
-    url: '/profile',
+    url: '/profile/about',
     icon: "icon-user"
   },
   {

@@ -2,7 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { LocationStrategy, HashLocationStrategy } from "@angular/common";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-// import { UserTimelineComponent } from "./views/test/user-timeline.component";
+import { UserTimelineComponent } from "./views/test/user-timeline.component";
 
 import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
 import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
@@ -127,7 +127,7 @@ import {
     P500Component,
     LoginComponent,
     RegisterComponent,
-    // UserTimelineComponent
+    UserTimelineComponent
   ],
   providers: [
     AuthService,

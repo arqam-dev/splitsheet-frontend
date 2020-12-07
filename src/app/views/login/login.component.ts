@@ -52,6 +52,7 @@ export class LoginComponent implements OnInit {
 
         localStorage.setItem("userId", this.userObj.data.items[0].id);
         localStorage.setItem("user_name", this.userObj.data.items[0].user_name);
+        localStorage.setItem("email", this.userObj.data.items[0].email);
         this.router.navigate(['/dashboard']);
       })
       .catch((err: HttpErrorResponse) => {
